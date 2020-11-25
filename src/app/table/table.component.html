@@ -1,0 +1,32 @@
+  <div class="col-12 titilium-Web-Bold-18 text-white text-center" style="margin-top: 10px !important;" *ngIf="eventList.length == 0">
+    <p>No record(s) found....</p>
+  </div>
+
+  <div class="col-12 titilium-Web-Bold-18 text-white text-center" style="margin-top: 10px !important; margin-bottom: 3.5rem !important;" *ngIf="eventList.length > 0">
+    <table mdbTable class="table table-bordered table-responsive-md table-striped text-center">
+      <thead class="text-white p-3">
+        <tr>
+          <th *ngFor="let head of headElements; let i = index" scope="col">{{head}}</th>
+        </tr>
+      </thead>
+      <tbody class="text-white text-center">
+        <tr *ngFor="let event of eventList">
+          <td>{{ event.videoFile ? event.videoFile : 'NIL'}}</td>
+          <td><img src="{{ '/VS3' + event.eventSnap }}" onError="this.src='assets/images/no_image_available.png';" alt="thumbnail"
+            class="img-thumbnail" style="width: 300px;"/></td>
+          <td>{{ event.anpr ? event.anpr : 'NIL' }}</td>
+          <td>{{ event.vehicleType ? event.vehicleType : 'NIL'}}</td>
+          <td>{{ event.vehicleMake ? event.vehicleMake : 'NIL'}}</td>
+          <td>{{ event.vehicleModel ? event.vehicleModel : 'NIL' }}</td>
+          <td>{{ event.vehicleColor ? event.vehicleColor : 'NIL' }}</td>
+
+          <td>{{ event.countOfHelmet != undefined ? event.countOfHelmet : 'NIL' }}</td>
+          <td>{{ event.countOfNoHelmet != undefined ? event.countOfNoHelmet : 'NIL' }}</td>
+          <td>{{ event.countOfTripleRide != undefined ? event.countOfTripleRide : 'NIL' }}</td>
+
+          <td>{{ event.captureTime > 0 ? (event.captureTime | date:'medium') : 'NIL'}}</td>
+          <td>{{ event.captureTimeInVideo >0 ? msToHMS(event.captureTimeInVideo) : 'NIL'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

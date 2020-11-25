@@ -1,0 +1,8 @@
+npm uninstall -g @angular/cli
+npm cache clean --force
+npm install -g @angular/cli@9.1.12
+command -v ng
+
+npm uninstall @angular/cli
+npm cache clean
+npm install @angular/cli@9.1.12
