@@ -28,9 +28,10 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { AccordionModule } from 'primeng/accordion'; //accordion and accordion tab
 import { MenuItem } from 'primeng/api'; //api
 import { FormsModule } from '@angular/forms';
+import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 
 @NgModule({
-  declarations: [AppComponent, TableComponent, TableFilterDemo],
+  declarations: [AppComponent, TableComponent, TableFilterDemo, DynamicTableComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
