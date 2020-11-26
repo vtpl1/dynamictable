@@ -20,7 +20,7 @@ RUN rm -rf /opt/yarn-* \
     && apt-get update \
     && apt-get -y install --no-install-recommends yarn
 # Install the Angular CLI
-RUN npm install -g @angular/cli@9.1.12
+RUN npm install -g @angular/cli@11.0.0
 # Clean up
 RUN apt-get autoremove -y \
     && apt-get clean -y \
