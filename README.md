@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 npm install primeng@10.0.3 --save
 npm install primeicons@4.1.0 --save
 npm install @angular/cdk@9.2.4 --save
+npm install chart.js --save
+npm install quill --save
+npm install primeflex --save

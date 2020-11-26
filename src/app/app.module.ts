@@ -16,8 +16,18 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 
+import { ToastModule } from 'primeng/toast';
+import { CalendarModule } from 'primeng/calendar';
+import { SliderModule } from 'primeng/slider';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { ContextMenuModule } from 'primeng/contextmenu';
+import { DropdownModule } from 'primeng/dropdown';
+import { ProgressBarModule } from 'primeng/progressbar';
+
+
 import { AccordionModule } from 'primeng/accordion'; //accordion and accordion tab
 import { MenuItem } from 'primeng/api'; //api
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, TableComponent, TableFilterDemo],
@@ -34,8 +44,17 @@ import { MenuItem } from 'primeng/api'; //api
     TableModule,
     DialogModule,
     TooltipModule,
+    TableModule,
+    CalendarModule,
+    SliderModule,
+    MultiSelectModule,
+    ContextMenuModule,
+    DropdownModule,
+    ToastModule,
+    ProgressBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Customer, Representative } from '../domain/customer';
 import { CustomerService } from '../service/customer-service.service';
 
+
 @Component({
   selector: 'app-table-filter-demo',
   templateUrl: './table-filter-demo.component.html',
